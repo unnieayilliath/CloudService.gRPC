@@ -4,10 +4,10 @@ using Grpc.Core;
 
 namespace CloudService.gRPC.Services
 {
-    public class EdgeMessageService : EdgeMessage.EdgeMessageBase
+    public class CloudBrokerService : CloudBroker.CloudBrokerBase
     {
-        private readonly ILogger<EdgeMessageService> _logger;
-        public EdgeMessageService(ILogger<EdgeMessageService> logger)
+        private readonly ILogger<CloudBrokerService> _logger;
+        public CloudBrokerService(ILogger<CloudBrokerService> logger)
         {
             _logger = logger;
         }
