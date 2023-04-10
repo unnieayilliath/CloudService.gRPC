@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33513.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudService.gRPC", "CloudService.gRPC\CloudService.gRPC.csproj", "{FC927CEF-A153-4DE3-9E7D-CCE31AA6F546}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudService.gRPC", "CloudService.gRPC\CloudService.gRPC.csproj", "{FC927CEF-A153-4DE3-9E7D-CCE31AA6F546}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudService.EventHub", "CloudService.EventHub\CloudService.EventHub.csproj", "{644DE3E9-19B7-4C44-A129-7E744DE5DBEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudService.UnitTests", "CloudService.UnitTests\CloudService.UnitTests.csproj", "{11D53F77-5262-452B-AA56-DD153BD5C39D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{FC927CEF-A153-4DE3-9E7D-CCE31AA6F546}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC927CEF-A153-4DE3-9E7D-CCE31AA6F546}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC927CEF-A153-4DE3-9E7D-CCE31AA6F546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{644DE3E9-19B7-4C44-A129-7E744DE5DBEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{644DE3E9-19B7-4C44-A129-7E744DE5DBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{644DE3E9-19B7-4C44-A129-7E744DE5DBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{644DE3E9-19B7-4C44-A129-7E744DE5DBEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11D53F77-5262-452B-AA56-DD153BD5C39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D53F77-5262-452B-AA56-DD153BD5C39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D53F77-5262-452B-AA56-DD153BD5C39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D53F77-5262-452B-AA56-DD153BD5C39D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
