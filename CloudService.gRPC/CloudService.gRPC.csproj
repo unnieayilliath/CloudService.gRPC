@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -8,17 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Protos\message.proto" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Protobuf Include="Protos\message.proto" GrpcServices="Server" />
-    <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.51.0" />
     <PackageReference Include="Google.Protobuf" Version="3.22.0-rc2" />
   </ItemGroup>
-
+	<ItemGroup>
+		<Protobuf Include="..\..\CommonModule.Protos\edge.proto" GrpcServices="Server" />
+		<Protobuf Include="..\..\CommonModule.Protos\cloud.proto" GrpcServices="Server" />
+	</ItemGroup>
 </Project>

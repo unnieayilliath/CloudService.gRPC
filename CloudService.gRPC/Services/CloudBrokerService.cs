@@ -1,4 +1,4 @@
-using CloudService.gRPC;
+using CommonModule.Protos;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 
@@ -12,7 +12,7 @@ namespace CloudService.gRPC.Services
             _logger = logger;
         }
 
-        public override Task<CloudResponse> Send(CloudRequest request, ServerCallContext context)
+        public override Task<CloudResponse> Send(EquipmentEnrichedMessage request, ServerCallContext context)
         {
             return Task.FromResult(new CloudResponse
             {
