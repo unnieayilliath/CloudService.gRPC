@@ -10,6 +10,11 @@
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.51.0" />
     <PackageReference Include="Google.Protobuf" Version="3.22.0-rc2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CloudService.EventHub\CloudService.EventHub.csproj" />
   </ItemGroup>
 	<ItemGroup>
 		<Protobuf Include="..\..\CommonModule.Protos\edge.proto" GrpcServices="Server" />
