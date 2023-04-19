@@ -2,9 +2,10 @@ using CloudService.gRPC.Services;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 var builder = WebApplication.CreateBuilder(args);
+var port= builder.Configuration.GetValue<int>("port");
 builder.WebHost.ConfigureKestrel((context, options) =>
 {
-    options.ListenAnyIP(5003, listenOptions =>
+    options.ListenAnyIP(port, listenOptions =>
     {
         listenOptions.Protocols = HttpProtocols.Http1AndHttp2AndHttp3;
         listenOptions.UseHttps();
@@ -12,7 +13,8 @@ builder.WebHost.ConfigureKestrel((context, options) =>
 });
 // Add services to the container.
 builder.Services.AddGrpc();
-
+//run as windows service
+builder.Host.UseWindowsService();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
