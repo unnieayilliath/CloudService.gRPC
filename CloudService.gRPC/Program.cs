@@ -11,6 +11,7 @@ builder.WebHost.ConfigureKestrel((context, options) =>
         listenOptions.UseHttps();
     });
 });
+builder.Services.AddSingleton<CloudBrokerService>();
 // Add services to the container.
 builder.Services.AddGrpc();
 //run as windows service
