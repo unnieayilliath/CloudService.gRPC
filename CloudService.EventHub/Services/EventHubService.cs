@@ -7,7 +7,7 @@ namespace CloudService.EventHub.Services
 {
     public class EventHubService : IEventHubService
     {
-        private static readonly string _connectionString = "Endpoint=sb://cloudbroker-eventhub.servicebus.windows.net/;SharedAccessKeyName=createevents;SharedAccessKey=kUJRj4cydykjeRqYa5nJgWipHGzrkrIMp+AEhNuCJMs=;EntityPath=iot-sites";
+        private static readonly string _connectionString = "Endpoint=sb://cloudbroker-eventhub.servicebus.windows.net/;SharedAccessKeyName=createevents;SharedAccessKey=;EntityPath=iot-sites";
         private static readonly string _eventHubName = "iot-sites";
         private static EventDataBatch? _eventBatch;
         private EventHubProducerClient _eventProducerClient;
@@ -24,7 +24,7 @@ namespace CloudService.EventHub.Services
             return true;
         }
         /// <summary>
-        /// 
+        //
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
